@@ -1,0 +1,46 @@
+.produits .produit {
+  width: 400px;
+}
+
+.produit .body {
+  height: auto;
+}
+
+.produit .footer {
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px -8px 8px -8px #ccc;
+}
+
+.produits .produit img {
+  width: 300px !important;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(132, 132, 132);
+}
+
+.produit button {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+  transition-duration: 250ms;
+}
+
+.produit button:hover {
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 0 5px #ccc;
+  cursor: pointer;
+}
+
+.note {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.produit .footer p, .note, .produit button {
+  margin: 5px;
+}

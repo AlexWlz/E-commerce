@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.footer a, .footer p {
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer a:hover {
+    cursor: pointer;
+    transition-duration: 100ms;
+    color: gray;
+}
+
+@media screen and (max-width: 410px) {
+    .footer {
+        height: 50px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .footer p, .footer a {
+        margin: 0;
+    }
+}

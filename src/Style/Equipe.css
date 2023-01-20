@@ -1,0 +1,15 @@
+.equipe .card {
+    width: 300px;
+    padding-bottom: 0;
+}
+
+.equipe img {
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(132, 132, 132);
+}
+
+.equipe .footer, .equipe p {
+    margin: 0px;
+    padding: 0;
+}

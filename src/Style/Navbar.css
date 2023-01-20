@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 0 10px #ccc;
+  word-wrap: break-word;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  transition-duration: 100ms;
+  color: gray;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+
+}
+.link {
+  width: calc(100% - 100px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar .conteneur_burger {
+  display: none;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .burger {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  height: 25px;
+}
+
+.navbar .burger svg {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .burger:hover {
+  cursor: pointer;
+}
+
+.navbar .burger:hover > .bar {
+  background-color: gray;
+}
+
+.navbar .burger .bar {
+  transition-duration: 100ms;
+  box-shadow: 0 0 2px rgb(90, 90, 90);
+  height: 3px;
+  width: 25px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: rgb(50, 50, 50);
+}
+
+.navbar .active > .bar {
+  margin-left: -25px;
+}
+
+.navbar .active > .bar1 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.navbar .active > .bar2 {
+  position: absolute;
+  transform: rotate(135deg);
+}
+
+.navbar .active > .bar3 {
+  display: none;
+}
+
+@media screen and (max-width: 410px) {
+  .link {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .navbar .conteneur_burger {
+    display: flex;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .navbar img {
+    height: 40px;
+  }
+}
